@@ -24,25 +24,25 @@ export const Footer = () => {
       <Styles.FooterBottom>
         <Styles.FooterSocialMedias>
           <Styles.FooterSocialMedia>
-            <Link to='' style={{ backgroundImage: `url(${facebookLogo})` }}>facebook</Link>
+            <a href='' style={{ backgroundImage: `url(${facebookLogo})` }}>facebook</a>
           </Styles.FooterSocialMedia>
           <Styles.FooterSocialMedia>
-            <Link to='' style={{ backgroundImage: `url(${twitterLogo})` }}>twitter</Link>
+            <a href='' style={{ backgroundImage: `url(${twitterLogo})` }}>twitter</a>
           </Styles.FooterSocialMedia>
           <Styles.FooterSocialMedia>
-            <Link to='' style={{ backgroundImage: `url(${instagramLogo})` }}>instagram</Link>
+            <a href='' style={{ backgroundImage: `url(${instagramLogo})` }}>instagram</a>
           </Styles.FooterSocialMedia>
         </Styles.FooterSocialMedias>
 
         <Styles.FooterApps>
           <Styles.FooterApp>
-            <Link to='' style={{ backgroundImage: `url(${appStoreLogo})` }}>AppStore</Link>
+            <a href='' style={{ backgroundImage: `url(${appStoreLogo})` }}>AppStore</a>
           </Styles.FooterApp>
           <Styles.FooterApp>
-            <Link to='' style={{ backgroundImage: `url(${playLogo})` }}>PlayStore</Link>
+            <a href='' style={{ backgroundImage: `url(${playLogo})` }}>PlayStore</a>
           </Styles.FooterApp>
           <Styles.FooterApp>
-            <Link to='' style={{ backgroundImage: `url(${windowsLogo})` }}>WindowsStore</Link>
+            <a href='' style={{ backgroundImage: `url(${windowsLogo})` }}>WindowsStore</a>
           </Styles.FooterApp>
         </Styles.FooterApps>
       </Styles.FooterBottom>
