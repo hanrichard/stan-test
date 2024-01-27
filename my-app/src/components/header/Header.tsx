@@ -7,7 +7,7 @@ export const Header = () => {
       <Styles.Logo>DEMO Streaming</Styles.Logo>
       <nav>
         <Link to='/'>Log in</Link>
-        <Link to='/'>Start your free trail</Link>
+        <Styles.ButtonLink to='/'>Start your free trail</Styles.ButtonLink>
       </nav>
     </Styles.ContainerInner>
   </Styles.Container>

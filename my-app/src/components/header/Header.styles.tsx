@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.header`
 	background: rgb(2,151,255);
@@ -7,17 +8,20 @@ export const Container = styled.header`
 `;
 
 export const ContainerInner = styled.div`
-	display: flex;
 	max-width: 1280px;
 	width: 100%;
 	margin: 0 auto;
-	justify-content: space-between;
-	align-items: center;
 
 	a {
 		color: #ffffff;
 		text-decoration: none;
 		margin-right: 20px;
+	}
+
+	@media only screen and (min-width: 768px) {	
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 `;
 
@@ -25,4 +29,18 @@ export const Logo = styled.b`
 	margin-right: auto;
 	color: #ffffff;
 	font-size: 38px;
+	margin-bottom: 20px;
+	display: block;
+
+	@media only screen and (min-width: 768px) {	
+		margin-bottom: 0;
+	}
 `;
+
+
+export const ButtonLink = styled(Link)`
+	background: rgb(2,151,255);
+	background: linear-gradient(180deg, rgb(53,53,53, 1) 0%, rgba(65,65,65,1) 100%);
+	text-decoration: none;
+	padding: 10px 20px;
+`

@@ -1,7 +1,7 @@
 import * as Styles from './HeadingSection.styles';
 
-export const HeadingSection = () => {
+export const HeadingSection = ({ heading }: { heading: string }) => {
   return <Styles.Container>
-    <Styles.ContainerInner>Popular Titles</Styles.ContainerInner>
+    <Styles.ContainerInner><h2>{heading}</h2></Styles.ContainerInner>
   </Styles.Container>
 }
