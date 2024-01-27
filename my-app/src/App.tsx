@@ -45,7 +45,7 @@ export const App = () => {
     fetch("http://localhost:3000/sample.json")
       .then((res) => {
         if (!res.ok) {
-          !appState.error && setAppState({
+          setAppState({
             ...appState,
             isFetching: false,
             error: 'error'
@@ -55,20 +55,20 @@ export const App = () => {
         return res.json()
       })
       .then((data) => {
-        !appState.data && setAppState({
+        setAppState({
           ...appState,
           isFetching: false,
           data: data
         });
       }).catch((err) => {
-        !appState.error && setAppState({
+        setAppState({
           ...appState,
           isFetching: false,
           error: err
         })
       });
-    // @ts-ignore: Unreachable code error
-  }, [appState])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <BrowserRouter>
