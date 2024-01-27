@@ -1,15 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const Container = styled.div`
-	margin-right: 10px;
-
-	img { 
-		width: 100%;
-		height: auto;
-	}
-`;
-
 export const StyledLink = styled(Link)`
 	text-decoration: none;
 	color: #000000;
@@ -29,6 +20,11 @@ export const ImageLinkContainer = styled(Link)`
 	background-position: center;
 	color: #ffffff;
 	text-transform: uppercase;
+
+	img { 
+		width: 100%;
+		height: auto;
+	}
 	
 	b {
 		font-size: 32px;

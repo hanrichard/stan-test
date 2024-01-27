@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.ul`
-	margin: 20px 0;
+	margin-top: 50px;
 	list-style: none;
 	padding: 0;
 	display: grid;
