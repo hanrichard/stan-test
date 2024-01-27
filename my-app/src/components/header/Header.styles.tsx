@@ -15,7 +15,6 @@ export const ContainerInner = styled.div`
 	a {
 		color: #ffffff;
 		text-decoration: none;
-		margin-right: 20px;
 	}
 
 	@media only screen and (min-width: 768px) {	
@@ -43,4 +42,5 @@ export const ButtonLink = styled(Link)`
 	background: linear-gradient(180deg, rgb(53,53,53, 1) 0%, rgba(65,65,65,1) 100%);
 	text-decoration: none;
 	padding: 10px 20px;
+	margin-left: 20px;
 `
