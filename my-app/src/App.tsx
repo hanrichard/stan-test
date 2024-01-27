@@ -41,32 +41,35 @@ export const App = () => {
     error: undefined
   })
 
-  useEffect(() => {
-    fetch("http://localhost:3000/sample.json")
-      .then((res) => {
-        if (!res.ok) {
-          setAppState({
-            ...appState,
-            isFetching: false,
-            error: 'error'
-          })
-          throw new Error(res.statusText)
-        }
-        return res.json()
+  const handleFetchData = async () => {
+    const response = await fetch("http://localhost:3000/sample.json")
+    if (!response.ok) {
+      setAppState({
+        ...appState,
+        isFetching: false,
+        error: 'error'
       })
-      .then((data) => {
-        setAppState({
-          ...appState,
-          isFetching: false,
-          data: data
-        });
-      }).catch((err) => {
-        setAppState({
-          ...appState,
-          isFetching: false,
-          error: err
-        })
+      throw new Error(response.statusText)
+    }
+
+    try {
+      const data = await response.json();
+      setAppState({
+        ...appState,
+        isFetching: false,
+        data: data
       });
+    } catch (err) {
+      setAppState({
+        ...appState,
+        isFetching: false,
+        error: 'error'
+      })
+    }
+  }
+
+  useEffect(() => {
+    handleFetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
