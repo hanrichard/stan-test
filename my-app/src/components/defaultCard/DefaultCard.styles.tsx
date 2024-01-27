@@ -18,15 +18,13 @@ export const StyledLink = styled(Link)`
 export const ImageLinkContainer = styled(Link)`
 	margin-bottom: 10px;
 	display: flex;
-	text-wrap: wrap;
 	text-decoration: none;
-	position: relative;
 	background: #1E1E1E;
 	height: 250px;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-size: contain;
+	background-size: 280px;
 	background-repeat: no-repeat;
 	background-position: center;
 	color: #ffffff;
