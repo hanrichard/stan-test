@@ -14,7 +14,7 @@ export const Home = ({ appState }: {
         <DefaultCard url='series' title="Series" />
       </CardListItem>
       <CardListItem>
-        <DefaultCard url='movies' title="Movies" />
+        <DefaultCard url='movie' title="Movies" />
       </CardListItem>
     </CardList>
   };

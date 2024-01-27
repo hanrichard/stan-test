@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './features/Home';
-import { Movies } from './features/Movies';
+import { Category } from './features/CategoryPage';
 import { Layout } from './components/layout/Layout';
 
 export const MOVIE_TYPE = {
@@ -75,8 +75,7 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home appState={appState} />} />
-          <Route path="/series" element={<Movies title={MOVIE_TYPE.SERIES} appState={appState} />} />
-          <Route path="/movies" element={<Movies title={MOVIE_TYPE.MOVIES} appState={appState} />} />
+          <Route path="/:cat" element={<Category appState={appState} />} />
         </Route>
       </Routes>
     </BrowserRouter>
