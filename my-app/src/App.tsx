@@ -12,7 +12,7 @@ export const MOVIE_TYPE = {
 export interface DataProps {
   total: number;
   entries: EntreisProps[];
-}
+};
 
 export interface EntreisProps {
   title: string;
@@ -26,13 +26,13 @@ export interface EntreisProps {
     }
   }
   releaseYear: number;
-}
+};
 
 export interface AppStateProps {
   isFetching: boolean;
   error?: string;
   data?: DataProps;
-}
+};
 
 export const App = () => {
   const [appState, setAppState] = useState<AppStateProps>({
@@ -81,6 +81,6 @@ export const App = () => {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

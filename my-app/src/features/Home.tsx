@@ -25,6 +25,6 @@ export const Home = ({ appState }: {
       {dispalyContent()}
     </Container>
   </>
-}
+};
 
 export default Home;

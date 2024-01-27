@@ -48,4 +48,5 @@ export const Footer = () => {
       </Styles.FooterBottom>
     </Styles.ContainerInner>
   </Styles.Container>
-}
+};
+

@@ -10,4 +10,4 @@ export const Card = ({ imageUrl, title }: {
     </Styles.ImageLinkContainer>
     <Link to='/'>Popular {title}</Link>
   </Styles.Container>
-}
+};

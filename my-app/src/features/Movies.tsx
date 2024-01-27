@@ -32,4 +32,4 @@ export const Movies = ({ title, appState }: {
       {dispalyContent()}
     </Container>
   </>
-}
+};

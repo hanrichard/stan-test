@@ -8,4 +8,4 @@ export const DefaultCard = ({ title, url }: { title: string, url: string }) => {
     </Styles.ImageLinkContainer>
     <Styles.StyledLink to={url}>Popular {title}</Styles.StyledLink>
   </Styles.Container>
-}
+};
