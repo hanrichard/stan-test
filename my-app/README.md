@@ -73,3 +73,5 @@ React, React hooks, Typescript, ES6, styled-components and scss, etc...
 - Try to use TDD
 
 - Try to use google fonts to make UI looks nicer
+
+- Try to deploy the api to AWS
