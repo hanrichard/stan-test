@@ -60,24 +60,16 @@ React, React hooks, Typescript, ES6, styled-components and scss, etc...
 
 ### Are there any improvements you could make to your submission?
 
-- Homepage shows two cards all the time
+- To improve the accessibilities
 
-- The api end point will be different on prod env
+- To improve the UI for mobile and tablet views
 
-- It will show a No Category message when the Category route is not matched
+- To create a UI component lib and include all components
 
-- For now, all links on header and footer will navigate to the main page, as there are NO pages linked yet
-
-- All mobile and table UI are based on the assumption, as there are no designs provided yet
-
-- No custom fonts used yet
+- To add more unit tests
 
 ### What would you do differently if you were allocated more time?
 
-- to improve the accessibilities
+- Try to use TDD
 
-- to improve the UI for mobile and tablet views
-
-- to create a UI component lib and include all components
-
-- to improve unit test
+- Try to use google fonts to make UI looks nicer
