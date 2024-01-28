@@ -46,17 +46,19 @@ React, React hooks, Typescript, ES6, styled-components and scss, etc...
 
 #### technical
 
-- To use foundamental technical stack, React, React hooks, Typescript, ES6, styled-components and scss, to avoid additional dependency to be added in the package.
+- To use foundamental technical stack, React, React hooks, Typescript, ES6, styled-components and scss, to avoid additional dependencies to be added in the package.
 
 #### architectural choices
 
 - To use react-router to navigate between pages
 
-- To create a custom hooks and get data, error, isFetching values from the hook
+- To create a custom hook and fetch data and togther with error and isFetching states from the hook
 
-- To use the hook in the homepage and dynamic category pages
+- To use custom hook in both homepage and dynamic category pages, to fetch data
 
-- To includes all components in the component folder
+- To include all pages in the feature folder
+
+- To use style-component to create component UIs
 
 ### Are there any improvements you could make to your submission?
 
@@ -64,13 +66,17 @@ React, React hooks, Typescript, ES6, styled-components and scss, etc...
 
 - To improve the UI for mobile and tablet views
 
+- To create a theme
+
 - To create a UI component lib and include all components
 
 - To add more unit tests
 
 ### What would you do differently if you were allocated more time?
 
-- Try to use TDD
+- Try to use react-query lib to have better cache support
+
+- Try to spend more time on unit tests
 
 - Try to use google fonts to make UI looks nicer
 

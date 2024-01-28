@@ -4,7 +4,7 @@ import * as Styles from './Header.styles';
 export const Header = () => {
   return <Styles.Container>
     <Styles.ContainerInner>
-      <Styles.Logo>DEMO Streaming</Styles.Logo>
+      <Styles.Logo to='/'><b>DEMO Streaming</b></Styles.Logo>
       <nav>
         <Link to='/'>Log in</Link>
         <Styles.ButtonLink to='/'>Start your free trail</Styles.ButtonLink>

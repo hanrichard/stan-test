@@ -24,7 +24,7 @@ export const ContainerInner = styled.div`
 	}
 `;
 
-export const Logo = styled.b`
+export const Logo = styled(Link)`
 	margin-right: auto;
 	color: #ffffff;
 	font-size: 38px;
