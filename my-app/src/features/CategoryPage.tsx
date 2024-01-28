@@ -36,7 +36,7 @@ export const Category = ({ appState }: {
   };
 
   return <>
-    <HeadingSection heading={"Popular " + heading} />
+    {heading && <HeadingSection heading={"Popular " + heading} />}
     <Container>
       {dispalyContent()}
     </Container>
