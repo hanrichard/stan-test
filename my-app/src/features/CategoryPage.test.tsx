@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { Category } from './CategoryPage';
-import { MemoryRouter } from "react-router-dom";
 import { customRender } from '../test/test-utils';
 
 test('renders loading...', () => {
