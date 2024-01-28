@@ -1,46 +1,81 @@
-# Getting Started with Create React App
+# Stan Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Description
 
-## Available Scripts
+Using React and Typescript, to create stan homepage and feature page.
 
-In the project directory, you can run:
+### What's in the project
 
-### `yarn start`
+Client provides the front-end app to view bus report data from the JSON file
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Tech stacks
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+React, React hooks, Typescript, ES6, styled-components and scss, etc...
 
-### `yarn test`
+### How to run the App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Go to the root folder
 
-### `yarn build`
+- Run `yarn install`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Run `yarn dev`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### How to test:
 
-### `yarn eject`
+- Go to the root folder
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Run `yarn test`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### How to build:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Go to the root folder
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Run `yarn build`
 
-## Learn More
+- The build vervion will be shonwn in the dist folder
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Note:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- You’ll need to have Node 18.18.0 or a later version on your local development machine (but it’s not required on the server).
+
+- You’ll need to have Chome version 119 or the later version on your local development machine.
+
+### How did you decide on the technical and architectural choices used as part of your solution?
+
+#### technical
+
+- To use foundamental technical stack, React, React hooks, Typescript, ES6, styled-components and scss, to avoid additional dependency to be added in the package.
+
+#### architectural choices
+
+- To use react-router to navigate between pages
+
+- To create a custom hooks and get data, error, isFetching values from the hook
+
+- To use the hook in the homepage and dynamic Category pages
+
+- To includes all components in the component folder
+
+### Are there any improvements you could make to your submission?
+
+- Homepage shows two cards all the time
+
+- The api end point will be different on prod env
+
+- It will show a No Category message when the Category route is not matched
+
+- For now, all links on header and footer will navigate to the main page, as there are NO pages linked yet
+
+- All mobile and table UI are based on the assumption, as there are no designs provided yet
+
+- No custom fonts used yet
+
+### What would you do differently if you were allocated more time?
+
+- to improve the accessibilities
+
+- to improve the UI for mobile and tablet views
+
+- to create a UI component lib and include all components
