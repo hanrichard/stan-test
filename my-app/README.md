@@ -54,7 +54,7 @@ React, React hooks, Typescript, ES6, styled-components and scss, etc...
 
 - To create a custom hooks and get data, error, isFetching values from the hook
 
-- To use the hook in the homepage and dynamic Category pages
+- To use the hook in the homepage and dynamic category pages
 
 - To includes all components in the component folder
 
