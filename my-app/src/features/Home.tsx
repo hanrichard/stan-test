@@ -1,13 +1,13 @@
 import React from 'react';
 import { DefaultCard, CardList, CardListItem, HeadingSection, Container } from '../components';
-import { AppStateProps } from '../App';
+import { useCategory } from '../hooks/useCategory';
 
-export const Home = ({ appState }: {
-  appState: AppStateProps
-}) => {
+export const Home = () => {
+  const { isFetching, error } = useCategory();
+
   const dispalyContent = () => {
-    if (appState.isFetching) return <p>Loading...</p>;
-    if (appState.error) return <p>Oops, something went wrong...</p>
+    if (isFetching) return <p>Loading...</p>;
+    if (error) return <p>Oops, something went wrong...</p>
 
     return <CardList>
       <CardListItem>
