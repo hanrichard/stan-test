@@ -38,21 +38,23 @@ export const useCategory = () => {
   })
 
   const handleFetchData = async () => {
-    const response = await fetch("http://localhost:3000/sample.json");
-
     try {
+      const response = await fetch("http://localhost:3000/sample.json");
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
       const data = await response.json();
       setAppState({
-        ...appState,
+        data: data,
         isFetching: false,
-        data: data
+        error: undefined,
       });
     } catch (err) {
       setAppState({
-        ...appState,
+        data: undefined,
         isFetching: false,
-        error: 'error'
-      })
+        error: (err as Error)?.message,
+      });
     }
   };
 
