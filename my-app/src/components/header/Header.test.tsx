@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { Header } from './Header';
 import { MemoryRouter } from "react-router-dom";
 
-test('renders loading...', () => {
+test('renders Header correctly', () => {
   render(<MemoryRouter><Header /></MemoryRouter>);
   const logoText = screen.getByText(/DEMO Streaming/i);
   expect(logoText).toBeInTheDocument();

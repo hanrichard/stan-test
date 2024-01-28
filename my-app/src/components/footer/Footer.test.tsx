@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { Footer } from './Footer';
 import { MemoryRouter } from "react-router-dom";
 
-test('renders loading...', () => {
+test('renders Footer correctly', () => {
   render(<MemoryRouter><Footer /></MemoryRouter>);
   const homeText = screen.getByText(/Home/i);
   expect(homeText).toBeInTheDocument();

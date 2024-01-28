@@ -29,4 +29,4 @@ export const ImageLinkContainer = styled(Link)`
 	b {
 		font-size: 32px;
 	}
-`
+`;

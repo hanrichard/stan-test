@@ -18,4 +18,4 @@ export const ImageLinkContainer = styled(Link)`
 	display: flex;
 	text-wrap: wrap;
 	text-decoration: none;
-`
+`;

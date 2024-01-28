@@ -79,3 +79,5 @@ React, React hooks, Typescript, ES6, styled-components and scss, etc...
 - to improve the UI for mobile and tablet views
 
 - to create a UI component lib and include all components
+
+- to improve unit test
