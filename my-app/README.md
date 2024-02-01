@@ -62,7 +62,7 @@ React, React hooks, Typescript, ES6, styled-components and scss, etc...
 
 ### Are there any improvements you could make to your submission?
 
-- To improve the accessibilities
+- To improve the accessibility
 
 - To improve the UI for mobile and tablet views
 
